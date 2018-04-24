@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :question do
     author("Paul")
-    description("MyString")
+    description("question")
 
 
     # factory :question_with_answer do
@@ -13,7 +13,7 @@ FactoryBot.define do
 
   factory :answer do
     author("David")
-    description("MyString")
+    description("answer")
     question_id(1)
     association :question, factory: :question
   end
